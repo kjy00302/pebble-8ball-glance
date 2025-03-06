@@ -10,8 +10,16 @@ static void prv_update_app_glance(AppGlanceReloadSession *session, size_t limit,
   int idx = rand() % strings_cnt;
   const char *str = strings_get(idx);
 
+  uint32_t icon = PUBLISHED_ID_ICON_RESPONSE_YES;
+  if (idx >= 15) {
+    icon = PUBLISHED_ID_ICON_RESPONSE_NO;
+  } else if (idx >= 10) {
+    icon = PUBLISHED_ID_ICON_RESPONSE_LATER;
+  }
+
   AppGlanceSlice entry = (AppGlanceSlice) {
     .layout = {
+      .icon = icon,
       .subtitle_template_string = str
     },
     .expiration_time = expire

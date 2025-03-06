@@ -28,6 +28,38 @@
           "type": "bitmap",
           "name": "IMAGE_MENU_ICON",
           "file": "menu_icon.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_RESPONSE_YES",
+          "file": "yes.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_RESPONSE_NO",
+          "file": "no.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "ICON_RESPONSE_LATER",
+          "file": "later.png"
+        }
+      ],
+      "publishedMedia": [
+        {
+          "name": "ICON_RESPONSE_YES",
+          "id": 1,
+          "glance": "ICON_RESPONSE_YES"
+        },
+        {
+          "name": "ICON_RESPONSE_NO",
+          "id": 2,
+          "glance": "ICON_RESPONSE_NO"
+        },
+        {
+          "name": "ICON_RESPONSE_LATER",
+          "id": 3,
+          "glance": "ICON_RESPONSE_LATER"
         }
       ]
     }
