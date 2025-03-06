@@ -1,7 +1,7 @@
 #include <pebble.h>
 
 // Magic 8 Ball strings from Wikipedia
-static char *strings[] = {
+static const char *strings[] = {
   "It is certain",
   "It is decidedly so",
   "Without a doubt",
@@ -26,7 +26,7 @@ static char *strings[] = {
   "Very doubtful"
 };
 
-static int strings_cnt = sizeof(strings) / sizeof(char*);
+static const int strings_cnt = sizeof(strings) / sizeof(char*);
 
 const char *strings_get_random() {
   int idx = rand() % strings_cnt;
