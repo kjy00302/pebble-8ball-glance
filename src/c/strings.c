@@ -1,4 +1,4 @@
-#include <pebble.h>
+#include "strings.h"
 
 // Magic 8 Ball strings from Wikipedia
 static const char *strings[] = {
@@ -26,9 +26,8 @@ static const char *strings[] = {
   "Very doubtful"
 };
 
-static const int strings_cnt = sizeof(strings) / sizeof(char*);
+const int strings_cnt = sizeof(strings) / sizeof(char*);
 
-const char *strings_get_random() {
-  int idx = rand() % strings_cnt;
+const char *strings_get(int idx) {
   return strings[idx];
 }

@@ -6,7 +6,9 @@ static void prv_update_app_glance(AppGlanceReloadSession *session, size_t limit,
 
   // expires in 5 second
   time_t expire = time(NULL) + 5;
-  const char *str = strings_get_random();
+
+  int idx = rand() % strings_cnt;
+  const char *str = strings_get(idx);
 
   AppGlanceSlice entry = (AppGlanceSlice) {
     .layout = {
