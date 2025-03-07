@@ -26,7 +26,9 @@ static const char *strings[] = {
   "Very doubtful"
 };
 
-const int strings_cnt = sizeof(strings) / sizeof(char*);
+int strings_get_cnt(void) {
+  return sizeof(strings) / sizeof(char*);
+}
 
 const char *strings_get(int idx) {
   return strings[idx];

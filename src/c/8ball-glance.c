@@ -7,7 +7,7 @@ static void prv_update_app_glance(AppGlanceReloadSession *session, size_t limit,
   // expires in 5 second
   time_t expire = time(NULL) + 5;
 
-  int idx = rand() % strings_cnt;
+  int idx = rand() % strings_get_cnt();
   const char *str = strings_get(idx);
 
   uint32_t icon = PUBLISHED_ID_ICON_RESPONSE_YES;
