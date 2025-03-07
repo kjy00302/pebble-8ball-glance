@@ -30,6 +30,6 @@ int strings_get_cnt(void) {
   return sizeof(strings) / sizeof(char*);
 }
 
-const char *strings_get(int idx) {
+const char *strings_get_str(int idx) {
   return strings[idx];
 }
