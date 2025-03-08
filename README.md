@@ -1,4 +1,4 @@
-# (Yet another) Magic 8 Ball for Pebble
+# Little 8 Ball for Pebble
 
 Yet another experimental Magic 8 Ball app uses App Glance without any screens.
 

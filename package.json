@@ -6,7 +6,7 @@
   "private": true,
   "dependencies": {},
   "pebble": {
-    "displayName": "Magic 8 Ball",
+    "displayName": "Little 8 Ball",
     "uuid": "40b36f77-3e4b-4ff7-a687-94cba082f14a",
     "sdkVersion": "3",
     "enableMultiJS": true,
